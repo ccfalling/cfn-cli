@@ -1,0 +1,42 @@
+{
+  "name": "wfe-cli",
+  "version": "1.0.0",
+  "description": "wfe-cli",
+  "bin": {
+    "wfe-cli": "./cli.js"
+  },
+  "main": "cli.js",
+  "scripts": {
+    "dev": "",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "author": "leo mo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.1",
+    "html-webpack-inline-source-plugin": "^1.0.0-beta.2",
+    "html-webpack-plugin": "^4.0.0-beta.3",
+    "less-loader": "^5.0.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "webpack": "^4.41.5",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.0.0",
+    "shelljs": "^0.8.3",
+    "yargs": "^14.2.0"
+  }
+}
