@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-require('./lib/wfe-cli.js')
+require('./lib/cfn-cli.js')
