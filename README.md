@@ -17,7 +17,7 @@
 
 ## config
     cfn-cli web --config $filepath
-一个入口配置文件，json只支持json格式,构建配置中所有页面,使用配置文件模式会构建配置中所有页面
+一个入口配置文件，文件只支持json格式,构建配置中所有页面,使用配置文件模式会构建配置中所有页面
 
     config.json
     {
