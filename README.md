@@ -8,27 +8,21 @@
 # command
 ## web
     cfn-cli web
-代表构建web单页，output在当前目录下的dist文件，默认配置文件为命令行所在目录下的cfn.config.json文件，与[webpack](http://webpack.github.io/)配置项相同
+代表构建web单页，output在当前目录下的dist文件，默认配置文件为命令行所在目录下的cfn.config.json（仅json类型）文件，与[webpack](http://webpack.github.io/)配置项相同。
 
 # option
-## config
+## page p
+    cfn-cli web --page
+    cfn-cli web --p test
+指定需要构建的文件夹，默认入口为指定文件夹的index.js，此选项默认开启dev模式
+
+## config c
     cfn-cli web --config ./config.json
-提供一个入口配置文件，文件只支持json格式,构建配置中所有页面,使用配置文件模式会构建配置中所有页面
+    cfn-cli web --c ./config.json
+提供一个入口配置文件，构建配置中所有页面,使用配置文件模式会构建配置中所有页面
 
-当入口配置项为字符串时，使用webpack-dev-server启动开发模式，默认端口8001
-    config.json
-    {
-      entry: './src/home.js',
-    }
-    cfn-cli web --config ./config.json
-
-当入口配置项为对象时，使用生产环境构建模式
-    config.json
-    {
-        entry: {
-            home: './src/home.js',
-            prod: './src/prod.js'
-        }
-    }
-
-
+## dev d
+    cfn-cli web --dev
+    cfn-cli web --d
+    cfn-cli web --c ./config.json -d
+开始开发者模式，以webpack-dev-server 启动开发者模式，与config选项一起使用，可以自定义配置启动开发者模式
