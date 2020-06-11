@@ -29,7 +29,8 @@ htmlplugin的配置需要单独写在htmlPlugins下:
 ## page p
     cfn-cli web --page test
     cfn-cli web --p test
-指定需要构建的文件夹，默认入口为指定文件夹的index.js
+page: string
+page可以是文件夹名称、入口文件相对路径，为文件夹时，默认入口为指定文件夹吓的的index.js
 
 ## config c
     cfn-cli web --config ./config.json
@@ -37,7 +38,5 @@ htmlplugin的配置需要单独写在htmlPlugins下:
 提供一个入口配置文件，使用配置指定配置替换默认配置
 
 ## dev d
-    cfn-cli web --dev
     cfn-cli web -p test --d
-    cfn-cli web --c ./config.json -d
 开启开发者模式，以webpack-dev-server 启动开发者模式
